@@ -309,6 +309,7 @@ header {
     align-items: center;
     gap: 10px;
     box-shadow: 0 4px 12px rgba(29, 183, 163, 0.2);
+    text-decoration: none;
 }
 
 .botao-gerar-pdf:hover {
