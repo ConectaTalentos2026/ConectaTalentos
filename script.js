@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const senha = senhaInput.value;
 
     // Validação das credenciais
-    if (usuario === "lucas" && senha === "01234") {
+    if (usuario === "joao" && senha === "01234") {
       // Redireciona para a página do candidato
       window.location.href = "Usuario.html";
     } else if (usuario === "serasa" && senha === "56789") {
