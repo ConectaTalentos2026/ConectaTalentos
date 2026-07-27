@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const senha = senhaInput.value;
 
     // Validação das credenciais
-    if (usuario === "joao" && senha === "01234") {
+    if (usuario === "joaosilva@gmail.com" && senha === "01234") {
       // Redireciona para a página do candidato
       window.location.href = "Usuario.html";
-    } else if (usuario === "serasa" && senha === "56789") {
+    } else if (usuario === "serasaexperian@gmail.com" && senha === "56789") {
       // Redireciona para a página da empresa
       window.location.href = "empresa.html";
     } else {
