@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/Logo.png" />
+  <link rel="stylesheet" href="assets/Css/variables.css" />
+  <link rel="stylesheet" href="assets/Css/styleusuario.css" />
+  <script src="empresa.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="usuario.html">
+        <img src="assets/Conecta.png" alt="Logo ConectaTalentos" />
+      </a>
+    </div>
+
+    <div class="header-usuario">
+      <a href="Usuario.html" class="link-dashboard">Dashboard</a>
+
+      <div class="perfil-drop" id="btn-perfil">
+        <img src="assets/Usuario/João.png" alt="Foto de Perfil" class="avatar" />
+        <span class="seta-drop" id="seta-menu">▼</span>
+      </div>
+
+      <!-- Menu Corporativo Dropdown -->
+      <div class="menu-corporativo" id="menu-corporativo">
+        <div class="menu-header">
+          <span class="menu-dots"></span>
+          <h3>Ações Rapidas</h3>
+        </div>
+
+        <nav class="menu-links">
+          <a href="curriculo.html" class="btn-menu">📄 Editar Curriculo</a>
+        </nav>
+
+        <div class="menu-footer">
+          <a href="index.html" class="btn-sair">🚪 Sair</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <!-- Perfil -->
+    <section class="card perfil">
+      <img src="assets/Usuario/João.png" alt="Foto do usuário" />
+
+      <div class="info">
+        <h2>João Gomes da Silva</h2>
+
+        <span>Currículo 100% Completo</span>
+
+        <div class="barra">
+          <div class="progresso" style="width: 100%"></div>
+        </div>
+
+        <small>Última atualização Ontem às 15:32</small>
+      </div>
+    </section>
+
+    <!-- Candidaturas -->
+    <section class="card card-candidaturas">
+      <h2>Candidaturas</h2>
+      <p>Acompanhe seu status de candidaturas enviadas:</p>
+
+      <div class="status">
+        <div class="item">
+          <div class="icone"><img src="assets/Usuario/aviao.png" /></div>
+          <span>Enviadas</span>
+        </div>
+
+        <div class="item">
+          <div class="icone"><img src="assets/Usuario/circulo.png" /></div>
+          <span>Em análise</span>
+        </div>
+
+        <div class="item">
+          <div class="icone"><img src="assets/Usuario/menu.png" /></div>
+          <span>Candidaturas</span>
+        </div>
+
+        <div class="item">
+          <div class="icone"><img src="assets/Usuario/proibido.png" /></div>
+          <span>Cancelados</span>
+        </div>
+      </div>
+
+      <div class="vaga">
+        <span>HAPVIDA NOTRE DAME - RECEPCIONISTA DE LABORATÓRIO</span>
+        <strong>70%</strong>
+      </div>
+
+      <div class="barra">
+        <div class="progresso" style="width: 70%"></div>
+      </div>
+    </section>
+
+    <!-- Cursos -->
+    <section class="card card-status-cursos">
+      <h2>Cursos</h2>
+      <p>Acompanhe seu status dos cursos:</p>
+
+      <div class="status">
+        <div class="item">
+          <div class="icone"><img src="assets/Usuario/lapis.png" /></div>
+          <span>Inscritos</span>
+        </div>
+
+        <div class="item">
+          <div class="icone"><img src="assets/Usuario/circulo.png" /></div>
+          <span>Em andamento</span>
+        </div>
+
+        <div class="item">
+          <div class="icone"><img src="assets/Usuario/checkmark.png" /></div>
+          <span>Concluídos</span>
+        </div>
+      </div>
+
+      <div class="curso">
+        <span>PROPROFISSÃO - INSTITUTO PROA</span>
+        <strong>100%</strong>
+      </div>
+
+      <div class="barra">
+        <div class="progresso" style="width: 100%"></div>
+      </div>
+
+      <div class="curso">
+        <span>TRANSFORME-SE - SERASA EXPERIAN E PROA</span>
+        <strong>100%</strong>
+      </div>
+
+      <div class="barra">
+        <div class="progresso" style="width: 100%"></div>
+      </div>
+
+      <div class="pontuacao">
+        <div>
+          <span>Pontuação</span>
+
+          <small>Acompanhe sua pontuação</small>
+        </div>
+
+        <div class="pontos">200 pontos</div>
+      </div>
+    </section>
+
+    <section class="card-recomendacoes">
+      <h2>Vagas recomendadas</h2>
+
+      <p>
+        As recomendações de hoje possuem 89% de compatibilidade. Aproveite
+        para atualizar seu currículo e se candidatar nas vagas.
+      </p>
+
+      <div class="grid-cards">
+        <article class="recomendacao">
+          <div class="topo-card">
+            <div>
+              <strong>Empresa: Mercado Livre</strong>
+
+              <small>
+                Cargo: Auxiliar Logístico
+                <br />
+                Local: Cajamar - SP
+              </small>
+            </div>
+
+            <img src="assets/Usuario/Mercado.png" alt="foto do mercado livre" />
+          </div>
+
+          <p>
+            A vaga de Auxiliar de Logística oferece oportunidade para atuar em
+            operações de armazenamento, separação e expedição de mercadorias.
+          </p>
+
+          <button>Candidatar</button>
+        </article>
+
+        <article class="recomendacao">
+          <div class="topo-card">
+            <div>
+              <strong>Empresa: Amazon Brasil</strong>
+
+              <small>
+                Cargo: Representante de Envios
+                <br />
+                Local: Jundiaí - SP
+              </small>
+            </div>
+
+            <img src="assets/Usuario/Amazon.png" alt="foto do amazon" />
+          </div>
+
+          <p>
+            Atuação em centros logísticos da Amazon realizando recebimento,
+            separação e expedição de produtos.
+          </p>
+
+          <button>Candidatar</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="card-cursos">
+      <h2>Cursos recomendados</h2>
+
+      <p>Aproveite para fazer a inscrição.</p>
+
+      <div class="grid-cards">
+        <article class="recomendacao">
+          <div class="topo-card">
+            <div>
+              <strong>Instituição: Mercado Livre</strong>
+
+              <small>
+                Curso: PROPROFISSÃO
+                <br />
+                Local: São Paulo
+              </small>
+            </div>
+
+            <img src="assets/Usuario/Proa.png" alt="Foto do Proa" />
+          </div>
+
+          <p>
+            Curso voltado para jovens que desejam ingressar no mercado de
+            trabalho.
+          </p>
+
+          <div class="rodape-card">
+            <div class="avaliacao">
+              <img alt="Estrela" class="classificacao" src="assets/Cursos/Estrela.png" /><img alt="Estrela"
+                class="classificacao" src="assets/Cursos/Estrela.png" /><img alt="Estrela" class="classificacao"
+                src="assets/Cursos/Estrela.png" /><img alt="Estrela" class="classificacao"
+                src="assets/Cursos/Estrela.png" /><img alt="Estrela" class="classificacao"
+                src="assets/Cursos/Estrela.png" />
+            </div>
+
+            <button>Inscrever-se</button>
+          </div>
+        </article>
+
+        <article class="recomendacao">
+          <div class="topo-card">
+            <div>
+              <strong>Instituição: Serasa Experian</strong>
+
+              <small>
+                Curso: Transforme-se
+                <br />
+                Local: São Paulo
+              </small>
+            </div>
+
+            <img src="assets/Usuario/Serasa.png" alt="foto do Serasa" />
+          </div>
+
+          <p>Curso gratuito de qualificação profissional para jovens.</p>
+
+          <div class="rodape-card">
+            <div class="avaliacao">
+              <img alt="Estrela" class="classificacao" src="assets/Cursos/Estrela.png" /><img alt="Estrela"
+                class="classificacao" src="assets/Cursos/Estrela.png" /><img alt="Estrela" class="classificacao"
+                src="assets/Cursos/Estrela.png" /><img alt="Estrela" class="classificacao"
+                src="assets/Cursos/Estrela.png" /><img alt="Estrela" class="classificacao"
+                src="assets/Cursos/Estrela.png" />
+            </div>
+
+            <button>Candidatar</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

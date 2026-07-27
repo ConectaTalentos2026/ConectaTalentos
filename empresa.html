@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Empresa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="assets/Logo.png" />
+    <link rel="stylesheet" href="assets/Css/variables.css">
+    <link rel="stylesheet" href="assets/Css/styleempresa.css">
+    <script src="empresa.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="empresa.html">
+                <img src="assets/Conecta.png" alt="Logo ConectaTalentos">
+            </a>
+        </div>
+
+        <div class="header-usuario">
+            <a href="empresa.html" class="link-dashboard">Dashboard</a>
+
+            <div class="perfil-drop" id="btn-perfil">
+                <img src="assets/perfildousuario.jpg" alt="Foto de Perfil" class="avatar">
+                <span class="seta-drop" id="seta-menu">▼</span>
+            </div>
+
+            <!-- Menu Corporativo Dropdown -->
+            <div class="menu-corporativo" id="menu-corporativo">
+                <div class="menu-header">
+                    <span class="menu-dots"></span>
+                    <h3>Menu Corporativo</h3>
+                </div>
+
+                <nav class="menu-links">
+                    <a href="cadastrovaga.html" class="btn-menu">💼 Cadastrar vagas</a>
+                    <a href="cadastrocurso.html" class="btn-menu">💻 Cadastrar cursos</a>
+                    <a href="#" class="btn-menu">📄 Currículos enviados</a>
+                    <a href="#" class="btn-menu">📊 Relatório de engajamento</a>
+                    <a href="#" class="btn-menu">⚙️ Configurações</a>
+                </nav>
+
+                <div class="menu-footer">
+                    <a href="index.html" class="btn-sair">🚪 Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ÁREA PRINCIPAL COM O PAINEL -->
+    <main class="dashboard-container">
+        <!-- Card Status do Plano -->
+        <div class="card-status-plano">
+            <!-- Coluna da Esquerda: Título, Badge e Anel Progressivo -->
+            <div class="plano-info-left">
+                <h2>Status do Plano</h2>
+                <p class="plano-badge">PLANO EMPRESARIAL - <span class="ativado">ATIVADO</span></p>
+
+                <!-- Circulo Gradiente de 100% Premium -->
+                <div class="circle-progress">
+                    <div class="circle-inner">
+                        <span class="porcentagem">100%</span>
+                        <span class="label-premium">Premium</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna da Direita: Métricas e Validade -->
+            <div class="plano-info-right">
+                <h3>Métricas adicionais</h3>
+                <ul class="lista-metricas">
+                    <li>Recomendações exclusivas</li>
+                    <li>Acesso a candidatos engajados</li>
+                    <li>Acesso a candidatos com maior pontuação</li>
+                    <li>Acesso a publicação de vagas de emprego</li>
+                    <li>Acesso a publicação de cursos</li>
+                </ul>
+                <div class="plano-validade">
+                    VALIDADE: <span>2/2026</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mensagem de Boas-Vindas -->
+        <div class="saudacao">
+            <h1>Olá, Empresa</h1>
+            <p>Prazer em ter você de volta!</p>
+        </div>
+    </main>
+
+</body>
+
+</html>

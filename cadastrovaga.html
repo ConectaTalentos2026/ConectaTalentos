@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Vaga</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="assets/Logo.png" />
+    <link rel="stylesheet" href="assets/Css/variables.css">
+    <link rel="stylesheet" href="assets/Css/styleempresa.css">
+    <link rel="stylesheet" href="assets/Css/stylevaga.css">
+    <script src="empresa.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="empresa.html">
+                <img src="assets/Conecta.png" alt="Logo ConectaTalentos">
+            </a>
+        </div>
+
+        <div class="header-usuario">
+            <a href="empresa.html" class="link-dashboard">Dashboard</a>
+
+            <div class="perfil-drop" id="btn-perfil">
+                <img src="assets/perfildousuario.jpg" alt="Foto de Perfil" class="avatar">
+                <span class="seta-drop" id="seta-menu">▼</span>
+            </div>
+
+            <!-- Menu Corporativo Dropdown -->
+            <div class="menu-corporativo" id="menu-corporativo">
+                <div class="menu-header">
+                    <span class="menu-dots"></span>
+                    <h3>Menu Corporativo</h3>
+                </div>
+
+                <nav class="menu-links">
+                    <a href="cadastrovaga.html" class="btn-menu">💼 Cadastrar vagas</a>
+                    <a href="cadastrocurso.html" class="btn-menu">💻 Cadastrar cursos</a>
+                    <a href="#" class="btn-menu">📄 Currículos enviados</a>
+                    <a href="#" class="btn-menu">📊 Relatório de engajamento</a>
+                    <a href="#" class="btn-menu">⚙️ Configurações</a>
+                </nav>
+
+                <div class="menu-footer">
+                    <a href="index.html" class="btn-sair">🚪 Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="vagas-container">
+        <h2 class="titulo-secao">Crie sua vaga de emprego</h2>
+
+        <form class="card-formulario">
+            <div class="form-group">
+                <label for="nome-vaga">Nome da vaga</label>
+                <input type="text" id="nome-vaga" name="nome-vaga" required>
+            </div>
+
+            <div class="form-group">
+                <label for="empresa-setor">Empresa/Setor</label>
+                <input type="text" id="empresa-setor" name="empresa-setor" required>
+            </div>
+
+            <div class="form-group">
+                <label for="local">Local</label>
+                <input type="text" id="local" name="local" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" rows="10" required></textarea>
+            </div>
+
+            <div class="form-acoes">
+                <button type="button" class="btn-secundario">cadastrar mais vagas</button>
+                <button type="submit" class="btn-primario">cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="ConectaTalentos, Vagas de Emprego, Capacitação, Acessibilidade, Oportunidades" />
+  <meta name="description"
+    content="Site da empresa, ConectaTalentos. Oferecemos oportunidades para jovens do Brasil a crescem profissionalmente." />
+  <meta name="author" content="Time ConectaTalentos" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content=" ConectaTalentos " />
+  <meta property="og:description" content="Pagina de Login da ConectaTalentos." />
+
+  <link rel="icon" type="image/svg+xml" href="assets/Logo.png" />
+  <link rel="stylesheet" href="assets/Css/variables.css" />
+  <link rel="stylesheet" href="assets/Css/styleslogin.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script src="script.js"></script>
+  <script src="mostrarsenha.js"></script>
+
+  <title>Login</title>
+</head>
+
+<body class="estrutura">
+  <header class="cabecalio">
+    <a class="logo" href="Index.html" aria-label="ConectaTalentos - Página Inicial">
+      <img src="assets/Conecta.png" alt="ConectaTalentos" />
+      <h1 class="sr-only">ConectaTalentos</h1>
+    </a>
+  </header>
+
+  <main>
+    <img class="background" src="assets/LoginSignUp/galaxy.png" alt="fundo" />
+    <section class="formulario">
+      <img class="logo" src="assets/Conecta.png" alt="ConectaTalentos" />
+      <h2>Já possui Cadastro?</h2>
+      <h3>Faça seu login</h3>
+      <form action="link-do-backend/api">
+        <fieldset>
+          <legend class="sr-only">Informações pessoais</legend>
+          <div>
+            <label class="sr-only" for="usuario-id">Login</label>
+            <input type="text" id="usuario-id" name="usuario" required placeholder="Login" />
+          </div>
+          <div class="mostrarsenha">
+            <label id="label-senha" class="sr-only" for="senha">Senha</label>
+            <input required id="senha" name="senha" type="password" placeholder="Senha" />
+            <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+          </div>
+          <div>
+            <button class="botao" type="submit">Entrar</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="social-login">
+        <a href="#" class="social-btn" aria-label="Entrar com Google">
+          <img src="assets/LoginSignUp/Google.png" alt="Google" />
+        </a>
+
+        <a href="#" class="social-btn" aria-label="Entrar com LinkedIn">
+          <img src="assets/LoginSignUp/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+      <div class="acoes">
+        <a class="botao outline" href="SignUp.html">Criar Conta</a>
+        <a class="botao outline" href="EsqueciSenha.html">Esqueci minha senha</a>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

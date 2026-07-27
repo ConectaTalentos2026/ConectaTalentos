@@ -1,0 +1,19 @@
+Botão de mostrar Senha: https://www.youtube.com/watch?v=tRpHfjKml6k&t
+
+
+Chat GPT: Prompts Utilizados
+Poderia fazer o flexbox dessa página e o porque utilizar (para a priemira CSS)
+Poderia deixar o código mais fiel a imagem do figma (Depois de ter feito ficar 95% fiel ao figma)
+Poderia deixar o meu código mais semantio ou algumas melhorias Sugeridas (Depois de finalizar o código HTML)
+Alem de varias perguntas quando o Prettier falhava
+
+Javascript de Login e Menu Dropdown: Anthony Fernando
+
+Base da página Cursos: João Negri
+
+
+OBSERVAÇÃO: Tive que utilizar muita IA na página CSS do Usuario.HTML 
+porque tentei pegar um atalho de usar códigos das outras páginas e acabou quebrando, ai Usei um prompt e a imagem do Figma
+"Tentei reutilizar códigos, mas acabou ficando 60% pronto e o resto tudo quebrado, poderia arrumar e me explicar onde deu errado"
+
+Todas as vezes que pedia para IA me ajudar, eu pedia a explicação e onde eu errei para aprender e não apenas utilizar IA para fazer tudo.
