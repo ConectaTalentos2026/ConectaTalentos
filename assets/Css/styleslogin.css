@@ -1,0 +1,259 @@
+/* OBS: Usei chat gpt para deixar mais facil de ler o código, 
+e como fazer o displayflex pois é algo que eu ainda não decorei muito bem */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-pri);
+    background: var(--clr-white);
+    color: var(--clr-bg);
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+header {
+    height: 72px;
+    background: var(--clr-white);
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 25px;
+}
+
+header .logo img {
+    height: 48px;
+}
+
+
+main {
+    display: flex;
+    height: calc(100vh - 72px);
+}
+
+
+.background {
+    width: 55%;
+    object-fit: cover;
+}
+
+.formulario {
+
+    width: 45%;
+    background: var(--clr-gray);
+    color: var(--clr-white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+}
+
+.formulario .logo {
+    width: 190px;
+    margin-bottom: 20px;
+}
+
+.formulario .logo img {
+    width: 100%;
+}
+
+.formulario h2 {
+
+    font-family: var(--font-pri);
+    font-size: 2rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.formulario h3 {
+
+    font-family: var(--font-sec);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.formulario form {
+
+    width: 100%;
+    max-width: 360px;
+}
+
+fieldset {
+
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+input {
+
+    width: 100%;
+    height: 46px;
+
+    border: 2px solid var(--clr-sec);
+    border-radius: 30px;
+
+    padding: 0 18px;
+
+    font-family: var(--font-sec);
+    font-size: 15px;
+
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--clr-trilight);
+}
+
+.botao {
+
+    width: 110px;
+    height: 38px;
+
+    border: 2px solid var(--clr-sec);
+    border-radius: 30px;
+
+    background: var(--clr-white);
+    color: var(--clr-sec);
+
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-sec);
+    font-size: .95rem;
+
+    margin: auto;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.botao:hover {
+
+    background: var(--clr-sec);
+    color: var(--clr-white);
+}
+
+.social-login {
+
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+
+    margin: 8px 0 12px;
+}
+
+.social-btn {
+
+    width: 48px;
+    height: 48px;
+
+    border: 2px solid var(--clr-sec);
+    border-radius: 50%;
+
+    background: var(--clr-white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s;
+}
+
+.social-btn:hover {
+
+    transform: scale(1.05);
+    border-color: var(--clr-pri);
+}
+
+.social-btn img {
+
+    width: 24px;
+    height: 24px;
+}
+
+
+.acoes {
+
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+
+    margin-top: 8px;
+}
+
+.acoes .botao {
+
+    width: 165px;
+    height: 40px;
+}
+
+@media (max-width: 900px) {
+
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .background {
+        width: 100%;
+        height: 280px;
+    }
+
+    .formulario {
+
+        width: 100%;
+        padding: 40px 25px;
+    }
+
+    .acoes {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .acoes .botao {
+
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
+div {
+    position: relative;
+}
+
+div i {
+    font-size: 30px;
+    cursor: pointer;
+
+    position: absolute;
+    right: 5%;
+    color: grey;
+}

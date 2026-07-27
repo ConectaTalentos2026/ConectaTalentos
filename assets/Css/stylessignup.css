@@ -1,0 +1,306 @@
+/*=========================
+RESET
+=========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--font-pri);
+    background: var(--clr-white);
+    color: var(--clr-bg);
+
+    overflow: hidden;
+}
+
+/* Esconde visualmente */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/*=========================
+HEADER
+=========================*/
+
+.cabecalio {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 50px;
+
+    background: var(--clr-white);
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 58px;
+    width: auto;
+}
+
+/*=========================
+MAIN
+=========================*/
+
+.signup-container {
+    flex: 1;
+
+    display: flex;
+
+    min-height: 0;
+}
+
+/*=========================
+FORMULÁRIO
+=========================*/
+
+.signup {
+    flex: 0 0 35%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background: var(--clr-gray);
+
+    padding: 35px 45px;
+
+    overflow: auto;
+}
+
+.signup-header {
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 18px;
+}
+
+.signup-header img {
+    width: 165px;
+    height: auto;
+
+    margin-bottom: 18px;
+}
+
+.signup-header h2 {
+    color: var(--clr-white);
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.signup-header h3 {
+    color: var(--clr-white);
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*=========================
+FORM
+=========================*/
+
+.signup-form {
+    width: 100%;
+    max-width: 390px;
+}
+
+.input-group,
+.mostrarsenha {
+    margin-bottom: 12px;
+}
+
+.input-group input,
+.mostrarsenha input {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 20px;
+
+    border: 2px solid var(--clr-pri);
+    border-radius: 30px;
+
+    outline: none;
+
+    font-family: var(--font-sec);
+    font-size: 1rem;
+
+    transition: .3s;
+}
+
+.input-group input:focus,
+.mostrarsenha input:focus {
+    border-color: var(--clr-sec);
+}
+
+/*=========================
+MOSTRAR SENHA
+=========================*/
+
+.mostrarsenha {
+    position: relative;
+}
+
+.mostrarsenha i {
+    position: absolute;
+
+    right: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 22px;
+    color: #7a7a7a;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.mostrarsenha i:hover {
+    color: var(--clr-pri);
+}
+
+/*=========================
+CHECKBOX
+=========================*/
+
+.checkbox-group {
+    margin-top: 5px;
+
+    color: var(--clr-white);
+    font-size: .80rem;
+}
+
+.checkbox-group input {
+    margin-right: 6px;
+}
+
+.checkbox-group label {
+    cursor: pointer;
+}
+
+.checkbox-group p {
+    margin-top: 10px;
+
+    color: #d7d7d7;
+
+    font-size: .74rem;
+    line-height: 1.5;
+}
+
+/*=========================
+BOTÃO
+=========================*/
+
+.btn-primary {
+    display: block;
+
+    width: 130px;
+    height: 42px;
+
+    margin: 18px auto 0;
+
+    border: 2px solid var(--clr-pri);
+    border-radius: 25px;
+
+    background: var(--clr-white);
+    color: var(--clr-pri);
+
+    font-size: .85rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    background: var(--clr-pri);
+    color: var(--clr-white);
+}
+
+/*=========================
+LOGIN
+=========================*/
+
+.login-link {
+    margin-top: 16px;
+
+    text-align: center;
+
+    color: var(--clr-white);
+    font-size: .85rem;
+}
+
+.login-link a {
+    color: var(--clr-white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    color: var(--clr-prilight);
+}
+
+/*=========================
+IMAGEM
+=========================*/
+
+.signup-image {
+    flex: 1;
+
+    background-image: url("../LoginSignUp/galaxy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+
+    transform: translateY(-50%);
+
+    font-size: 24px;
+    color: #808080;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.input-group i:hover {
+    color: var(--clr-pri);
+}

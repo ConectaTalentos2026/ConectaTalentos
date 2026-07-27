@@ -1,0 +1,19 @@
+:root {
+  /* Paleta */
+  --clr-pri: #9c3aba;
+  --clr-prilight: #f1c1ff;
+  --clr-sec: #14b8a6;
+  --clr-seclight: #e6f7f3;
+  --clr-tri: #0025cc;
+  --clr-trilight: #ACBBFF;
+  --clr-trilighter: #89CFF0;
+  --clr-qua: #FF751F;
+  --clr-qualight: #FFD699;
+  --clr-bg: #000000;
+  --clr-gray: #383838;
+  --clr-white: #FFFFFF;
+
+  /* Tipografia */
+  --font-pri: "Poppins", sans-serif;
+  --font-sec: "Inter", sans-serif;
+}

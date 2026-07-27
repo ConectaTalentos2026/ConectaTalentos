@@ -1,0 +1,98 @@
+/* --- CONTAINER E TÍTULO DO FORMULÁRIO --- */
+.vagas-container {
+    max-width: 850px;
+    margin: 20px 0;
+}
+
+.titulo-secao {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* Classe para o título verde/turquesa */
+.titulo-secao.verde {
+    color: var(--clr-sec, #14b8a6);
+}
+
+/* --- CARD EXTERNO DO FORMULÁRIO --- */
+.card-formulario {
+    background: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 35px 30px 25px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- CAMPOS DE ENTRADA (INPUTS E TEXTAREA) --- */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #666666;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    background-color: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--clr-sec, #14b8a6);
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 220px;
+}
+
+/* --- BOTÕES NO CANTO INFERIOR DIREITO --- */
+.form-acoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Estilo geral dos botões */
+.btn-secundario,
+.btn-primario {
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: lowercase;
+}
+
+
+.btn-verde {
+    border: 2px solid var(--clr-sec, #14b8a6);
+    background-color: var(--clr-seclight, #e6f7f3);
+    color: #000000;
+}
+
+.btn-verde:hover {
+    background-color: var(--clr-sec, #14b8a6);
+    color: #ffffff;
+}
+
